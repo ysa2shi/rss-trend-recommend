@@ -1,0 +1,79 @@
+name: Trend Report
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
+      FETCH_FEEDS: "1"
+      FEED_LIMIT: "50"
+      FEED_CACHE_MAX_AGE_MINUTES: "180"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: ${{ runner.os }}-trend-cache-${{ github.ref }}-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-trend-cache-${{ github.ref }}-
+            ${{ runner.os }}-trend-cache-
+
+      - name: Generate report
+        run: npm run start
+
+      - name: Set report metadata
+        id: report-meta
+        run: |
+          echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+          echo "year=$(date +%Y)" >> $GITHUB_OUTPUT
+          echo "month=$(date +%m)" >> $GITHUB_OUTPUT
+          echo "compact=$(date +%Y%m%d)" >> $GITHUB_OUTPUT
+
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/trend-report
+          delete-branch: true
+          add-paths: trend
+          commit-message: "chore: trend report (${{ steps.report-meta.outputs.date }})"
+          title: "chore: trend report (${{ steps.report-meta.outputs.date }})"
+          body: |
+            ## Summary
+            - Generated trend report for ${{ steps.report-meta.outputs.date }} (JST).
+            - Report path: trend/${{ steps.report-meta.outputs.year }}/${{ steps.report-meta.outputs.month }}/${{ steps.report-meta.outputs.compact }}.md
+
+            ## Checklist
+            - [ ] Review the report content
+            - [ ] Merge when ready
+          labels: "automation"
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number != ''
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash

@@ -1,0 +1,69 @@
+sources:
+  - id: hatebu_it
+    name: Hatena Bookmark IT
+    type: rss
+    url: "https://b.hatena.ne.jp/hotentry/it.rss"
+    note: "Hatena Bookmark IT hot entries RSS"
+  - id: zenn
+    name: Zenn
+    type: rss
+    url: "https://zenn.dev/feed"
+    note: "Zenn articles RSS"
+  - id: qiita
+    name: Qiita
+    type: rss
+    url: "https://qiita.com/popular-items/feed.atom"
+    note: "Qiita popular items (Atom)"
+  - id: techfeed
+    name: TechFeed Programming
+    type: rss
+    group: techfeed
+    url: "https://techfeed.io/feeds/categories/Programming"
+    page: "https://techfeed.io/categories/Programming"
+    note: "Open the category page and click the RSS icon to copy the feed URL."
+  - id: techfeed_web_frontend
+    name: TechFeed Web / Frontend
+    type: rss
+    group: techfeed
+    url: "https://techfeed.io/feeds/categories/Web%20%2F%20Frontend"
+    page: "https://techfeed.io/categories/Web%20%2F%20Frontend"
+    note: "Open the category page and click the RSS icon to copy the feed URL."
+  - id: techfeed_cloud_backend
+    name: TechFeed Cloud / Backend
+    type: rss
+    group: techfeed
+    url: "https://techfeed.io/feeds/categories/Cloud%20%2F%20Backend"
+    page: "https://techfeed.io/categories/Cloud%20%2F%20Backend"
+    note: "Open the category page and click the RSS icon to copy the feed URL."
+  - id: techfeed_devops_agile
+    name: TechFeed DevOps / Agile
+    type: rss
+    group: techfeed
+    url: "https://techfeed.io/feeds/categories/DevOps%20%2F%20Agile"
+    page: "https://techfeed.io/categories/DevOps%20%2F%20Agile"
+    note: "Open the category page and click the RSS icon to copy the feed URL."
+  - id: techfeed_ai_bigdata
+    name: TechFeed AI / BigData
+    type: rss
+    group: techfeed
+    url: "https://techfeed.io/feeds/categories/AI%20%2F%20BigData"
+    page: "https://techfeed.io/categories/AI%20%2F%20BigData"
+    note: "Open the category page and click the RSS icon to copy the feed URL."
+  - id: techfeed_design
+    name: TechFeed Design
+    type: rss
+    group: techfeed
+    url: "https://techfeed.io/feeds/categories/Design"
+    page: "https://techfeed.io/categories/Design"
+    note: "Open the category page and click the RSS icon to copy the feed URL."
+  - id: hacker_news
+    name: Hacker News
+    type: rss
+    url: "https://hnrss.org/frontpage"
+    note: "Hacker News front page RSS (hnrss.org)"
+  - id: reddit
+    name: Reddit r/programming
+    type: rss
+    url: "https://www.reddit.com/r/programming/.rss"
+    subreddit: "programming"
+    note: "Reddit RSS via .rss endpoint"
