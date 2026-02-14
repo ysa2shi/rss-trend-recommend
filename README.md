@@ -65,7 +65,7 @@ trend/2026/02/20260212-ai-recommend.md
 ```md
 このリポジトリの AGENTS.md の指示に厳密に従って、以下を step by step で実行してください。
 
-対象日: `20260213`
+対象日: `YYYYMMDD`
 入力ファイル: trend/YYYY/MM/YYYYMMDD.md
 出力ファイル: trend/YYYY/MM/YYYYMMDD-ai-recommend.md
 興味条件（任意）: ai, backend, frontend, infra, architecture, devtools
