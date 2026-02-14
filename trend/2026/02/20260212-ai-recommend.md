@@ -6,7 +6,7 @@
 
 | タイトル | ブクマ数 | 興味度 | カテゴリ | メモ |
 | --- | --- | --- | --- | --- |
-| [AIがコメントしてくれる擬似ライブ配信をすると作業が楽しくなる　「見られてる感」が楽しさも効率も上げる！](https://dailyportalz.jp/kiji/giji-live-haishin){:target="_blank"} | 410 users | ★ | ai | 作業のモチベーション維持にAIを活用するユニークな試みです。実用性よりもエンタメ性が強いですが、AIの活用事例として興味深いです。 |
+| [AIがコメントしてくれる擬似ライブ配信をすると作業が楽しくなる　「見られてる感」が楽しさも効率も上げる！](https://dailyportalz.jp/kiji/giji-live-haishin) | 410 users | ★ | ai | 作業のモチベーション維持にAIを活用するユニークな試みです。実用性よりもエンタメ性が強いですが、AIの活用事例として興味深いです。 |
 | [「チームみらいの過疎地得票率が不自然に均一」という主張を、208市区町村の公式データで検証してみた｜せい@健康優良不良プログラマ](https://note.com/seiichi3141/n/n4ffefcc68673) | 313 users | - | other | データの統計的検証に関する記事です。ソフトウェア開発や技術トレンドとの直接的な関連性は低いため、興味度は低めです。 |
 | [Web アプリケーションをツール化する WebMCP](https://azukiazusa.dev/blog/webmcp-for-web-applications/) | 161 users | ★★★ | devtools | WebアプリケーションをMCPサーバとして扱うためのツールに関する技術解説です。LLMエージェントから既存ツールを呼び出す新たな標準として非常に注目されます。 |
 | [元GitHub CEOのドムケ氏、AI時代の開発プラットフォーム「Entire CLI」をオープンソースで公開。すべてのコンテキストをGitに保存](https://www.publickey1.jp/blog/26/github_ceoaientire_cligit.html) | 121 users | ★★★ | devtools | 元GitHub CEOによる新しい開発プラットフォームの公開は大きなニュースです。Gitをコンテキスト保存の基盤とする設計思想がモダンで興味深いです。 |
