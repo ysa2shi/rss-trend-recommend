@@ -3,9 +3,10 @@
 ## はてブIT（日本市場）
 
 ### 注目トピック
+
 | タイトル | ブクマ数 | 興味度 | カテゴリ | メモ |
 | --- | --- | --- | --- | --- |
-| [AIがコメントしてくれる擬似ライブ配信をすると作業が楽しくなる　「見られてる感」が楽しさも効率も上げる！](https://dailyportalz.jp/kiji/giji-live-haishin) | 410 users | ★ | ai | 作業のモチベーション維持にAIを活用するユニークな試みです。実用性よりもエンタメ性が強いですが、AIの活用事例として興味深いです。 |
+| [AIがコメントしてくれる擬似ライブ配信をすると作業が楽しくなる　「見られてる感」が楽しさも効率も上げる！](https://dailyportalz.jp/kiji/giji-live-haishin){:target="_blank"} | 410 users | ★ | ai | 作業のモチベーション維持にAIを活用するユニークな試みです。実用性よりもエンタメ性が強いですが、AIの活用事例として興味深いです。 |
 | [「チームみらいの過疎地得票率が不自然に均一」という主張を、208市区町村の公式データで検証してみた｜せい@健康優良不良プログラマ](https://note.com/seiichi3141/n/n4ffefcc68673) | 313 users | - | other | データの統計的検証に関する記事です。ソフトウェア開発や技術トレンドとの直接的な関連性は低いため、興味度は低めです。 |
 | [Web アプリケーションをツール化する WebMCP](https://azukiazusa.dev/blog/webmcp-for-web-applications/) | 161 users | ★★★ | devtools | WebアプリケーションをMCPサーバとして扱うためのツールに関する技術解説です。LLMエージェントから既存ツールを呼び出す新たな標準として非常に注目されます。 |
 | [元GitHub CEOのドムケ氏、AI時代の開発プラットフォーム「Entire CLI」をオープンソースで公開。すべてのコンテキストをGitに保存](https://www.publickey1.jp/blog/26/github_ceoaientire_cligit.html) | 121 users | ★★★ | devtools | 元GitHub CEOによる新しい開発プラットフォームの公開は大きなニュースです。Gitをコンテキスト保存の基盤とする設計思想がモダンで興味深いです。 |
@@ -17,6 +18,7 @@
 | [【特集】 液晶付きキーボードを魔改造して“ワープロ風PC”を作ってみた](https://pc.watch.impress.co.jp/docs/topic/feature/2084561.html) | 32 users | ★ | devtools | 自作ハードウェアやニッチなガジェット製作の事例です。技術的好奇心を刺激しますが、一般的な開発業務への直接的な関連性は限定的です。 |
 
 ### 全エントリー
+
 1. [「チームみらいの過疎地得票率が不自然に均一」という主張を、208市区町村の公式データで検証してみた｜せい@健康優良不良プログラマ](https://note.com/seiichi3141/n/n4ffefcc68673)
 2. [欧州委「エンジン車禁止」撤回へ](https://xtech.nikkei.com/atcl/nxt/mag/at/18/00138/00001/)
 3. [日本企業にありがちな「アジャイルの誤解」を解き、現場に定着させるための実践ガイド](https://zenn.dev/ncdc/articles/4428c3cad9421b)
@@ -33,6 +35,7 @@
 ## Zenn（日本市場）
 
 ### 注目トピック
+
 | タイトル | いいね数 | 興味度 | カテゴリ | メモ |
 | --- | --- | --- | --- | --- |
 | [0から分かる Claude Code 完全ガイド](https://zenn.dev/lv/books/f611cdfe8a6e1a) | - | ★★★ | devtools | 話題のClaude Codeの機能を網羅的に解説した貴重な資料です。導入から高度な活用までが体系的にまとめられており、必読です。 |
@@ -47,6 +50,7 @@
 | [一番の脆弱性は"人間のコードレビュー"だった](https://zenn.dev/smartvain/articles/ai-security-test-human-code-review-weakest) | - | ★★ | ai | AIによるセキュリティテストの有効性を強調する内容です。人間の限界をAIで補完する現実的なアプローチが参考になります。 |
 
 ### 全エントリー
+
 1. [AI VTuber開発日記 〜AIキャラクターの作成からOBSを用いたYouTube配信まで〜](https://zenn.dev/robustonian/articles/aituber_development_start)
 2. [CSSを、Vitestでテストしてみる](https://zenn.dev/silverbirder/articles/e1a70ea756a0)
 3. [UnityEditorをCLIで操作するツールを作った](https://zenn.dev/bigdra/articles/c399e88f1d8b71)
@@ -63,6 +67,7 @@
 ## Qiita（日本市場）
 
 ### 注目トピック
+
 | タイトル | ストック数 | 興味度 | カテゴリ | メモ |
 | --- | --- | --- | --- | --- |
 | [「セキュリティリスク＝影響度☓発生確率」をやめよう](https://qiita.com/f_0000/items/5cc486be289a8ea76728?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items) | - | ★★ | architecture | セキュリティリスク評価の新しいフレームワークを提示する示唆に富んだ記事です。設計段階での意思決定に役立つ視点です。 |
@@ -77,6 +82,7 @@
 | [高校生が作った「AIに丸投げできるスクレイピングシステム」が、Bright Dataで合法かつ最強になった話](https://qiita.com/harupython/items/52e164dfb810e700348f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items) | - | ★★ | ai | AIとプロキシサービスを組み合わせた高度な自動化事例です。法的な側面を考慮しつつ効率を最大化する実装アイデアが参考になります。 |
 
 ### 全エントリー
+
 1. [【WebF】React/Vue/Svelteがそのままネイティブアプリになるよ](https://qiita.com/rana_kualu/items/6c8f9db6565e80332d05?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
 2. [【後編】新人エンジニアは、なぜ「止まってしまう」のか。─教える側の“死角”](https://qiita.com/hitomin_poke/items/10211c4fa7248c7c9740?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
 3. [TCP/IPのきほんで学ぶ「ネットワークのセキュリティ① 」HTTPS・暗号化・VPNを整理してみた](https://qiita.com/masa_tech_0326/items/9cd09d8a0d598bdff9fb?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
@@ -93,6 +99,7 @@
 ## TechFeed（日本市場）
 
 ### 注目トピック
+
 | タイトル | スコア | 興味度 | カテゴリ | メモ |
 | --- | --- | --- | --- | --- |
 | [「レビューを経てないAI生成コード」を安全に実行するためのセキュア実行環境「Deno Sandbox」が公開され大きな話題に — 1秒未満で起動するというパフォーマンスにも注目](https://techfeed.io/entries/6982a74179175633b63648a8?from=rss) | - | ★★★ | infra | AI生成コードの安全な実行を可能にする軽量サンドボックスです。セキュリティと利便性を両立した、これからの開発に必須の技術です。 |
@@ -104,6 +111,7 @@
 | [Linuxカーネル、7.0でついにRustの採用が確定 — 実験フェーズは完了、長期的なコミットメントを表明](https://techfeed.io/entries/698a9f5feaf0364ecdcbe46b?from=rss) | - | ★★★ | infra | LinuxカーネルにおいてRustが正式採用されるという、歴史的な転換点です。メモリ安全性とパフォーマンスの両立に向けた大きな一歩です。 |
 
 ### 全エントリー
+
 1. [Linuxカーネル、7.0でついにRustの採用が確定 — 実験フェーズは完了、長期的なコミットメントを表明](https://techfeed.io/entries/698a9f5feaf0364ecdcbe46b?from=rss)
 2. [Bun v1.3.9リリース — コマンドラインフラグ（'--parallel', '--sequential'）のみで複数スクリプトを実行可能、'using'にも対応](https://techfeed.io/entries/698a983ceaf0364ecdcbe1d9?from=rss)
 3. [【海外記事紹介】Microsoftがオープンソースで公開した「LiteBox」が実は革新的だった — Linuxカーネルを抽象化したRust製「ライブラリOS」、セキュアで高速なサンドボックスを実現](https://techfeed.io/entries/69856135bf1c6338a73ae7f4?from=rss)
@@ -117,6 +125,7 @@
 ## Hacker News（グローバル）
 
 ### 注目トピック
+
 | タイトル | ポイント | 興味度 | カテゴリ | メモ |
 | --- | --- | --- | --- | --- |
 | [Apple's latest attempt to launch the new Siri runs into snags](https://www.bloomberg.com/news/articles/2026-02-11/apple-s-ios-26-4-siri-update-runs-into-snags-in-internal-testing-ios-26-5-27) | - | ★ | ai | AppleのAI戦略と進捗に関するニュースです。コンシューマー向けAIの難しさを物語る内容です。 |
@@ -131,6 +140,7 @@
 | [Show HN: Double blind entropy using Drand for verifiably fair randomness](https://blockrand.net/live.html) | - | ★★ | infra | 検証可能な乱数生成のための分散型ビーコンの活用例です。暗号学的・分散システム的な堅牢性が求められる領域で有用です。 |
 
 ### 全エントリー
+
 1. [Show HN: Double blind entropy using Drand for verifiably fair randomness](https://blockrand.net/live.html)
 2. [Heroku is not dead](https://nombiezinja.com/word-things/2026/2/8/heroku-is-not-dead)
 3. [GPT-5 outperforms federal judges in legal reasoning experiment](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6155012)
@@ -147,6 +157,7 @@
 ## Reddit（グローバル）
 
 ### 注目トピック
+
 | タイトル | 投票数 | コメント数 | 興味度 | カテゴリ | サブレッド | メモ |
 | --- | --- | --- | --- | --- | --- | --- |
 | ['AI fatigue is real and nobody talks about it': A software engineer warns there's a mental cost to AI productivity gains](https://www.reddit.com/r/programming/comments/1r27moo/ai_fatigue_is_real_and_nobody_talks_about_it_a/) | - | - | ★★ | other | programming | AI導入によるエンジニアのメンタルへの影響という重要な指摘です。生産性向上の裏にある心理的な代償についての考察が含まれています。 |
@@ -161,6 +172,7 @@
 | [Using YouTube as Cloud Storage](https://www.reddit.com/r/programming/comments/1r1jcl8/using_youtube_as_cloud_storage/) | - | - | ★ | infra | programming | YouTubeをクラウドストレージとして利用するという、ハック精神に溢れた試みです。実用性よりも発想の面白さが際立っています。 |
 
 ### 全エントリー
+
 1. [State of the Subreddit (January 2027): Mods applications and rules updates](https://www.reddit.com/r/programming/comments/1qoxwdt/state_of_the_subreddit_january_2027_mods/)
 2. ['AI fatigue is real and nobody talks about it': A software engineer warns there's a mental cost to AI productivity gains](https://www.reddit.com/r/programming/comments/1r27moo/ai_fatigue_is_real_and_nobody_talks_about_it_a/)
 3. [Announcing TypeScript 6.0 Beta](https://www.reddit.com/r/programming/comments/1r25zkp/announcing_typescript_60_beta/)
