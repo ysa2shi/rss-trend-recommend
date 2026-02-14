@@ -29,7 +29,8 @@ Read a daily Markdown report under `trend`, evaluate each listed article with AI
   - `興味度`: write visual marks (`★★★`, `★★`, `★`, `-`)
   - `カテゴリ`: write one allowed category
   - `メモ`: write a Japanese memo (2-3 sentences)
-- Preserve all other columns (e.g., title, bookmarks, likes, score, votes) as-is.
+- Preserve all other existing columns as-is.
+- Some source tables may omit metric columns when source values are empty; do not re-add omitted metric columns.
 
 ## Interest-based Organization, Filtering, and Categorization
 

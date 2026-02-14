@@ -23,6 +23,13 @@ function formatMetric(value: unknown, suffix = ""): string {
   return `${output}${suffix}`;
 }
 
+function hasMetricValue(value: unknown): boolean {
+  if (value === null || value === undefined) return false;
+  if (typeof value === "string") return value.trim() !== "";
+  if (typeof value === "number") return Number.isFinite(value);
+  return true;
+}
+
 function formatTitleLink(item: Article): string {
   const title = item.title || "Untitled";
   if (item.url) {
@@ -68,6 +75,9 @@ function renderStandardSection({
 }): string {
   const lines: string[] = [];
   const highlights = selectHighlights(items, config.metricKey, highlightLimit);
+  const includeMetricColumn = highlights.some((item) =>
+    hasMetricValue(getMetricValue(item, config.metricKey)),
+  );
 
   lines.push(`## ${config.title}`);
   lines.push("");
@@ -75,23 +85,26 @@ function renderStandardSection({
   if (highlights.length === 0) {
     lines.push(renderEmptyNotice());
   } else {
-    const rows = highlights.map((item) => [
-      formatTitleLink(item),
-      escapeTableCell(
-        formatMetric(
-          getMetricValue(item, config.metricKey),
-          config.metricSuffix,
-        ),
-      ),
-      "-",
-      "-",
-      "-",
-    ]);
+    const rows = highlights.map((item) => {
+      const row = [formatTitleLink(item)];
+      if (includeMetricColumn) {
+        row.push(
+          escapeTableCell(
+            formatMetric(
+              getMetricValue(item, config.metricKey),
+              config.metricSuffix,
+            ),
+          ),
+        );
+      }
+      row.push("-", "-", "-");
+      return row;
+    });
+    const headers = includeMetricColumn
+      ? ["タイトル", config.metricLabel, "興味度", "カテゴリ", "メモ"]
+      : ["タイトル", "興味度", "カテゴリ", "メモ"];
     lines.push(
-      renderTable(
-        ["タイトル", config.metricLabel, "興味度", "カテゴリ", "メモ"],
-        rows,
-      ),
+      renderTable(headers, rows),
     );
   }
 
@@ -119,6 +132,12 @@ function renderRedditSection({
 }): string {
   const lines: string[] = [];
   const highlights = selectHighlights(items, config.metricKey, highlightLimit);
+  const includeScoreColumn = highlights.some((item) =>
+    hasMetricValue(getMetricValue(item, config.metricKey)),
+  );
+  const includeCommentsColumn = highlights.some((item) =>
+    hasMetricValue(item.metrics?.comments ?? null),
+  );
 
   lines.push(`## ${config.title}`);
   lines.push("");
@@ -127,28 +146,25 @@ function renderRedditSection({
   if (highlights.length === 0) {
     lines.push(renderEmptyNotice());
   } else {
-    const rows = highlights.map((item) => [
-      formatTitleLink(item),
-      escapeTableCell(formatMetric(getMetricValue(item, config.metricKey), "")),
-      escapeTableCell(formatMetric(item.metrics?.comments ?? null, "")),
-      "-",
-      "-",
-      escapeTableCell(item.subreddit || "-"),
-      "-",
-    ]);
+    const rows = highlights.map((item) => {
+      const row = [formatTitleLink(item)];
+      if (includeScoreColumn) {
+        row.push(
+          escapeTableCell(formatMetric(getMetricValue(item, config.metricKey), "")),
+        );
+      }
+      if (includeCommentsColumn) {
+        row.push(escapeTableCell(formatMetric(item.metrics?.comments ?? null, "")));
+      }
+      row.push("-", "-", escapeTableCell(item.subreddit || "-"), "-");
+      return row;
+    });
+    const headers = ["タイトル"];
+    if (includeScoreColumn) headers.push("投票数");
+    if (includeCommentsColumn) headers.push("コメント数");
+    headers.push("興味度", "カテゴリ", "サブレッド", "メモ");
     lines.push(
-      renderTable(
-        [
-          "タイトル",
-          "投票数",
-          "コメント数",
-          "興味度",
-          "カテゴリ",
-          "サブレッド",
-          "メモ",
-        ],
-        rows,
-      ),
+      renderTable(headers, rows),
     );
   }
 
