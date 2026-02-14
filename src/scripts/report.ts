@@ -162,10 +162,6 @@ function renderRedditSection({
     });
   }
 
-  lines.push("");
-  lines.push("### カテゴリ別エントリー");
-  lines.push("（評価機能停止中のため省略）");
-
   return lines.join("\n");
 }
 
