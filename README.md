@@ -98,7 +98,15 @@ trend/2026/02/20260212-ai-recommend.md
 
 ```bash
 npm install
-FETCH_FEEDS=1 npm run start
+
+# 今日のレポートを生成（RSS取得あり）
+FETCH_FEEDS=1 npm start
+
+# 特定の日付のレポートを生成（YYYY-MM-DD形式で指定）
+npm start 2026-04-01
+
+# 特定の日付のレポートを生成（RSS取得あり）
+FETCH_FEEDS=1 npm start 2026-04-01
 ```
 
 ## 環境変数
