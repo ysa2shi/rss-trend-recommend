@@ -48,6 +48,8 @@ function parseBoolean(value: string | undefined): boolean {
 }
 
 async function main(): Promise<void> {
+  const argDate = process.argv.find((arg) => /^\d{4}-\d{2}-\d{2}$/.test(arg));
+
   const inputResult = await readJsonSafe<InputPayload>(INPUT_PATH, EMPTY_INPUT);
   if (inputResult.error) {
     console.warn(
@@ -98,7 +100,7 @@ async function main(): Promise<void> {
 
   let dateInfo;
   try {
-    dateInfo = resolveDateInfo(input.date);
+    dateInfo = resolveDateInfo(argDate || input.date);
   } catch (error) {
     console.warn(`WARN: Invalid input date, using JST today. ${error}`);
     dateInfo = resolveDateInfo();
