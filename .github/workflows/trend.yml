@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
@@ -69,10 +71,6 @@ jobs:
             ## Summary
             - Generated trend report for ${{ steps.report-meta.outputs.date }} (JST).
             - Report path: trend/${{ steps.report-meta.outputs.year }}/${{ steps.report-meta.outputs.month }}/${{ steps.report-meta.outputs.compact }}.md
-
-            ## Checklist
-            - [ ] Review the report content
-            - [ ] Merge when ready
           labels: "automation"
 
       - name: Enable auto-merge
