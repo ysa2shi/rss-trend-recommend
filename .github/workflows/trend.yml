@@ -73,10 +73,9 @@ jobs:
             - Report path: trend/${{ steps.report-meta.outputs.year }}/${{ steps.report-meta.outputs.month }}/${{ steps.report-meta.outputs.compact }}.md
           labels: "automation"
 
-      - name: Enable auto-merge
+      - name: Merge pull request immediately
         if: steps.cpr.outputs.pull-request-number != ''
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --squash --delete-branch
