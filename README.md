@@ -63,7 +63,7 @@ trend/2026/02/20260212-ai-recommend.md
 対象日: `YYYYMMDD` の部分は実行対象の日付に置き換えてください。
 
 ```md
-このリポジトリの AGENTS.md の指示に厳密に従って、以下を step by step で実行してください。
+このリポジトリの ドキュメントに厳密に従って、以下を step by step で実行してください。
 
 対象日: `YYYYMMDD`
 入力ファイル: trend/YYYY/MM/YYYYMMDD.md
